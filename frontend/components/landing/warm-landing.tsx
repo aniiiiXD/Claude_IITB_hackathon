@@ -85,7 +85,7 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-5 text-xs font-medium uppercase tracking-[0.2em]"
             style={{ color: RUST }}>
-            Rare-disease decision support · India
+            Rare-disease support specialist · India
           </motion.p>
 
           <motion.h1
@@ -902,7 +902,7 @@ function Footer() {
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 text-xs"
         style={{ color: INK_500 }}>
         <p>
-          Nidaan · A multi-agent clinical decision support tool for first-line Indian physicians
+          Nidaan · A rare-disease support specialist for India — coordinating patient, doctor, lab, and scheme
         </p>
         <p>
           Built with <span style={{ color: SAGE }}>Claude Haiku, Sonnet & Opus</span> · NCBI MedGen · HPO · PubMed
