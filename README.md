@@ -2,9 +2,9 @@
 
 # Nidaan
 
-### Six specialists. One clinical note. Six minutes to a differential.
+### The end-to-end operating layer for rare-disease care in India.
 
-*A multi-agent clinical decision support tool for first-line Indian physicians — built for the 96 million Indians living with a rare disease, where the average diagnostic odyssey is seven years and 30% of affected children die before age 5.*
+*From a parent's first paragraph of symptoms to the day the medicine reaches the child — Nidaan holds every link in the chain. Built around the 96 million Indians living with a rare disease, where 30% of affected children die before age 5 and the average diagnostic odyssey is seven years.*
 
 [![Built with Claude](https://img.shields.io/badge/built%20with-Claude%20Opus%204.7-D97757)](https://www.anthropic.com/claude)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -16,115 +16,146 @@
 
 ---
 
-## Why this exists
+## Why "end-to-end" is the only framing that matters
 
 > *"My only child died before my eyes because I couldn't afford the medicines."*
-> — Yogesh Kajabe, on his daughter Arohi, who had Gaucher disease type 1.
+> — Yogesh Kajabe. His daughter Arohi had Gaucher disease type 1.
 > *The drug existed. The ₹50 lakh NPRD scheme existed. The Centre of Excellence existed.*
 > *Nothing reached her in time.*
 
-A treatable rare disease in India is not primarily a medical problem. It is a logistics problem dressed up as a medical one. Five sequential things must hold for one child to live. India breaks all five by default.
+A treatable rare disease in India is not a medical problem. It is a logistics problem dressed up as a medical one. **Five sequential things must hold for one child to live, and India breaks all five by default.** A faster diagnosis is useless if the lab is 800 km away. A confirmed lab result is useless if the NPRD application stalls. An approved application is useless if the drug costs more than the cap. Approved funding is useless if the infusion centre's ventilator UPS fails silently.
 
-### The five-link chain
+Existing tools fix one link. Nidaan is built to hold the whole chain.
 
-| # | Link | What breaks |
-|---|---|---|
-| 01 | **Recognition** | A district-hospital GP sees one rare-disease patient a year. The textbook differential is malaria, TB, leukemia. The rare diagnosis isn't even on the list. |
-| 02 | **Confirmation** | Even when a doctor suspects it, enzyme assays and gene sequencing live in five labs across the entire country — almost all in metros. |
-| 03 | **Funding** | NPRD 2021 promises ₹50 lakh per patient. The Ministry of Health approves three out of ten applications. |
-| 04 | **Drug access** | ₹50 lakh sounds like a lot until the drug is ₹1.8 crore a year. There is no domestic orphan-drug pathway. |
-| 05 | **Time** | Even when the chain holds, the infusion centre is hours away. The equipment fails. The fund release is delayed. |
+---
+
+## The chain — and what Nidaan ships for each link
+
+| # | Link | What breaks | What Nidaan does |
+|---|---|---|---|
+| **01** | **Recognition** | District GP sees one rare-disease patient a year. The textbook differential is malaria, TB, leukemia. | **6-agent case conference** — patient text + GP findings → ranked differential with HPO/MedGen/PubMed citations in 6 minutes |
+| **02** | **Confirmation** | Enzyme assays and gene sequencing live in five labs across the entire country. | **Lab routing & sample-collection kit** — nearest accredited lab, costs in ₹, pre-filled requisition form, sample-shipping instructions |
+| **03** | **Funding** | NPRD 2021 promises ₹50 L/patient. Ministry approves 3 of 10 applications. | **NPRD application autodraft** — pre-filled from case data the moment a CoE specialist confirms the diagnosis, ready for signature |
+| **04** | **Drug access** | The drug costs more than the cap. There is no domestic orphan-drug pathway. | **Drug-access surfacing** — manufacturer pathways, import status, top-up schemes, and patient-assistance programmes in the same report |
+| **05** | **Time** | Even when the chain holds, the infusion centre is hours away; equipment fails; fund release is delayed. | **Compression** — Links 01–04 collapsed into a single afternoon. Care timeline + ongoing-care dashboard for the patient and family |
 
 The funding exists. The labs exist. The specialists exist. The legal precedent exists (*Master Arnesh Shaw v. Union of India*, Delhi HC, October 2024). **Nidaan is the connective tissue between them.**
 
 ---
 
-## What Nidaan does
-
-A first-line physician pastes a free-text clinical note. In six minutes, six AI agents run a structured case conference and return a ranked differential with evidence, the next test to order with cost, the specialist to refer to, and the nearest Centre of Excellence with directions — all in the same report.
+## The patient journey, end to end
 
 ```
-Patient writes  →  GP adds clinical findings  →  AI does the heavy lifting  →  Confirmed diagnosis
-"belly feels       "spleen enlarged,              6 specialist agents +         + nearest CoE
- swollen, bone      platelets 54k"                 NCBI MedGen + HPO +           + NPRD application
- pain at night"                                    PubMed citations               pre-filled
+   ┌─────────────────────────────────────────────────────────────────────┐
+   │                                                                     │
+   │   ┌──────────┐                                                      │
+   │   │ Patient  │  /patient/submit                                     │
+   │   │ writes   │─── plain language, own words ─────────┐              │
+   │   └──────────┘                                       │              │
+   │                                                      ▼              │
+   │   ┌──────────┐    /doctor/cases                ┌──────────┐         │
+   │   │ GP adds  │◀───────────────────────────────│ Case      │         │
+   │   │ findings │   exam · labs · family hx ────▶│ inbox     │         │
+   │   └──────────┘                                └──────────┘         │
+   │        │                                                            │
+   │        ▼  "Send for AI conference"                                  │
+   │   ┌─────────────────────────────────────────────────────────────┐   │
+   │   │  /analyze · 6 agents · Haiku → Sonnet ×3 → Opus · 6 min     │   │
+   │   │                                                             │   │
+   │   │   Screeners → Specialists (parallel) → Synthesizer          │   │
+   │   │                                                             │   │
+   │   │   Output: ranked differential · disagreement view ·         │   │
+   │   │           tier-1/2/3 test cascade · cited evidence          │   │
+   │   └─────────────────────────────────────────────────────────────┘   │
+   │        │                                                            │
+   │        ▼                                                            │
+   │   ┌──────────┐  /report                                             │
+   │   │ GP       │── confirms diagnosis ──┐                             │
+   │   │ reviews  │── orders Tier-1 test ──┤                             │
+   │   └──────────┘── routes to CoE ───────┤                             │
+   │                                       ▼                             │
+   │   ┌─────────────────────────────────────────────────────────────┐   │
+   │   │   Lab routing  →  Sample collection  →  Confirmed result    │   │
+   │   └─────────────────────────────────────────────────────────────┘   │
+   │                                       │                             │
+   │                                       ▼                             │
+   │   ┌─────────────────────────────────────────────────────────────┐   │
+   │   │   NPRD application (auto-drafted) → CoE signs → MoH submit  │   │
+   │   └─────────────────────────────────────────────────────────────┘   │
+   │                                       │                             │
+   │                                       ▼                             │
+   │   ┌─────────────────────────────────────────────────────────────┐   │
+   │   │   Drug access pathway · ongoing care · /patient/dashboard   │   │
+   │   │   nearest infusion centre · fund-release status · timeline  │   │
+   │   └─────────────────────────────────────────────────────────────┘   │
+   │                                                                     │
+   └─────────────────────────────────────────────────────────────────────┘
 ```
 
-One afternoon. Not seven years.
+Every step has a route. Every route has a state machine. Nothing falls between the cracks.
 
 ---
 
-## The multi-agent topology — a digital hospital board
+## The diagnostic engine — six specialists, three layers
+
+The case-conference engine is the heart of Link 01. It runs as a digital teaching-hospital board, compressed from six weeks into six minutes.
 
 ```
-┌─────────────────────────── Layer 1 · Screeners (Haiku 4.5) ───────────────────────────┐
-│                                                                                       │
-│   ① Common-disease screener   →   rules out malaria, TB, kala-azar before going       │
-│                                    down the rare-disease path                         │
-│                                                                                       │
-│   ② Phenotype extractor       →   maps free text → HPO terms                          │
-│                                    "big belly on the left" → HP:0001744 splenomegaly  │
-└─────────────────────────────────────────┬─────────────────────────────────────────────┘
-                                          │
-┌─────────────────────────── Layer 2 · Specialists (Sonnet 4.6) ────────────────────────┐
-│                                                                                       │
-│      ③ Metabolic         ④ Neurogenetic         ⑤ Immunologic                         │
-│      lysosomal storage,  Duchenne, SMA,         primary immunodeficiencies,           │
-│      inborn errors of    trinucleotide          complement deficiencies,              │
-│      metabolism (200+)   repeats, mito (200+)   rare autoimmune (200+)                │
-│                                                                                       │
-│      └────────────────────── asyncio.gather (parallel) ──────────────────────┘        │
-│                                                                                       │
-│      Each agent has independent tool access to NCBI MedGen, Orphanet,                 │
-│      PubMed, and the Human Phenotype Ontology. Each writes its own                    │
-│      ranked differential with citations.                                              │
-└─────────────────────────────────────────┬─────────────────────────────────────────────┘
-                                          │
-┌─────────────────────────── Layer 3 · Synthesizer (Opus 4.7) ──────────────────────────┐
-│                                                                                       │
-│   Reads all three specialist reports. Merges overlapping diagnoses.                   │
-│   Surfaces where the experts disagreed and why. Proposes the single                   │
-│   test cascade that resolves the question fastest.                                    │
-│                                                                                       │
-│   Specialist disagreement is the feature — not a bug to hide.                         │
-└───────────────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────── Layer 1 · Screeners (Haiku 4.5) ──────────────────────────┐
+│   ① Common-disease screener  →  rules out malaria, TB, kala-azar first           │
+│   ② Phenotype extractor      →  free text → HPO terms                            │
+│                                  "big belly on the left" → HP:0001744            │
+└──────────────────────────────────┬───────────────────────────────────────────────┘
+                                   │
+┌─────────────────────── Layer 2 · Specialists (Sonnet 4.6) ───────────────────────┐
+│   ③ Metabolic         ④ Neurogenetic         ⑤ Immunologic                       │
+│   lysosomal storage,  Duchenne, SMA,         primary immunodeficiencies,         │
+│   inborn errors of    trinucleotide          complement deficiencies,            │
+│   metabolism (200+)   repeats, mito (200+)   rare autoimmune (200+)              │
+│                                                                                  │
+│   └────────────────────── asyncio.gather (parallel) ────────────────────┘        │
+│   Each agent has independent tool access to NCBI MedGen, HPO, Wikipedia,         │
+│   PubMed. Each writes its own ranked differential with citations.                │
+└──────────────────────────────────┬───────────────────────────────────────────────┘
+                                   │
+┌─────────────────────── Layer 3 · Synthesizer (Opus 4.7) ─────────────────────────┐
+│   Reads all three specialist reports. Merges overlapping diagnoses.              │
+│   Surfaces where the experts disagreed and proposes the single test that         │
+│   resolves it. Disagreement is the feature — not a bug to hide.                  │
+└──────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-Three layers of reasoning. Six specialised models. The way a teaching hospital's case conference actually runs, compressed from six weeks into six minutes.
+| Layer | Model | Why this model |
+|---|---|---|
+| Screening, extraction | `claude-haiku-4-5-20251001` | Fast, cheap, deterministic |
+| Specialist reasoning | `claude-sonnet-4-6` | Tool-use loop over medical APIs |
+| Synthesis | `claude-opus-4-7` | Weighing disagreement is the hardest step — only Opus is good enough |
 
 ---
 
-## The hero demo — Ahmedabad Gaucher case
+## What every stakeholder gets
 
-```
-Day 1, 10:00 AM   Patient submits: "tired all the time, big belly, bruises
-                                    for no reason, bone pain at night"
+Nidaan is one system — but each role sees the slice of the pipeline they actually need.
 
-Day 1, 10:05 AM   Doctor adds: "spleen palpable 6 cm below costal margin,
-                                platelets 54k, anaemia, no fever"
+| Role | Route | What it does for them, end to end |
+|---|---|---|
+| **Patient & family** | `/patient/submit` → `/patient/dashboard` | Submit symptoms in plain language. Track status as the case moves through diagnosis → lab → NPRD → drug access. See nearest CoE on a map, government schemes you're eligible for, your medical-term symptom translation, your specialist type, and your full care timeline. |
+| **First-line GP** | `/analyze` + `/doctor/cases` | Run the 6-agent conference on any clinical note. Get a ranked differential with cited evidence, a tier-1/2/3 test cascade, the lab to send the sample to, and the specialist to refer to. |
+| **Specialist consultant** | `/doctor/consultations/[id]` | Receive routed referrals already pre-screened with the AI report and disagreement view. Confirm, modify, or escalate. |
+| **Researcher** | `/research/query` + `/research/requests` | Search consented patient cohorts by disease, gene, geography. **Counts only — never identifying records.** Submit formal data requests through the admin pipeline. |
+| **Government / MoHFW** | `/government/dashboard` | Aggregate epidemiology by state, disease category, quarter. Diagnostic-delay metrics. NPRD approval-rate gaps. CoE coverage map. CSV export for policy work. |
+| **Admin / data steward** | `/admin/users` + `/admin/requests` | Approve researcher access requests under ethics review. Manage role assignments. |
 
-Day 1, 10:11 AM   Six specialists return:
-                  ✓  Most likely:   Gaucher disease type 1 (98% confidence)
-                  ✓  Second:        Niemann-Pick type B (8%)
-                  ✓  Order:         β-glucocerebrosidase enzyme assay (₹2,500)
-                  ✓  Refer to:      Metabolic Geneticist
-                  ✓  Disagreement:  Immunologic agent flagged ITP — resolved
-                                    by the same enzyme assay
-                  ✓  Nearest CoE:   FRIGE Ahmedabad — 8 km
-                  ✓  NPRD draft:    pre-filled, ready for CoE signature
-
-Day 1, 10:30 AM   Patient sees: treatment center on a map, ₹50 lakh NPRD
-                                application status, what to expect next.
-```
+Patient consent is required for every flow that escapes the consulting room.
 
 ---
 
 ## Tech stack
 
 **Backend** — `backend/`
-- FastAPI + Uvicorn, async throughout
+- FastAPI + Uvicorn, fully async
 - `anthropic` async SDK orchestrating Opus 4.7 + Sonnet 4.6 + Haiku 4.5
-- `httpx` for live medical-database calls
+- `httpx` for live medical-database calls (HPO, NCBI MedGen, Wikipedia REST)
 - Server-Sent Events stream agent progress to the UI in real time
 
 **Frontend** — `frontend/`
@@ -133,18 +164,11 @@ Day 1, 10:30 AM   Patient sees: treatment center on a map, ₹50 lakh NPRD
 - Tailwind 4 + shadcn/ui + Framer Motion
 - Leaflet for Centre-of-Excellence and NIDAN Kendra maps
 
-**Data sources** *(no scraping; ToS-respectful)*
+**Real-world data baked in** *(no scraping; ToS-respectful)*
 - **Human Phenotype Ontology** — symptom → HPO term mapping
 - **NCBI MedGen** — canonical clinical genetics, OMIM cross-refs
 - **Wikipedia REST API** — clinical narrative fallback
-- **NPRD 2021 centre registry** — 12 Centres of Excellence + DBT/UMMID NIDAN Kendras (geocoded, baked in at `frontend/lib/centers.ts`)
-
-**Models**
-| Layer | Model ID | Why |
-|---|---|---|
-| Screening, extraction | `claude-haiku-4-5-20251001` | Fast, cheap, deterministic |
-| Specialist reasoning | `claude-sonnet-4-6` | Tool-use loop over medical APIs |
-| Synthesis | `claude-opus-4-7` | Weighing disagreement is the hardest step — only Opus is good enough |
+- **NPRD 2021 centre registry** — 12 Centres of Excellence + DBT/UMMID NIDAN Kendras (geocoded, in `frontend/lib/centers.ts`)
 
 ---
 
@@ -188,16 +212,40 @@ curl -X POST http://localhost:8000/analyze/stream \
 
 ---
 
-## One system. Four perspectives.
+## The hero demo — Ahmedabad Gaucher case (full chain)
 
-| Role | Route | What they get |
-|---|---|---|
-| **Doctor** | `/analyze` | Free-text clinical note → ranked differential, next test, referral, citations |
-| **Patient** | `/patient/submit` | Submit symptoms in plain language; track status as the case moves; treatment-centre map; NPRD application status |
-| **Researcher** | `/research/query` | Cohort counts only — never individual records; minimum-cohort floor for privacy; formal data requests via admin pipeline |
-| **Government** | `/government/dashboard` | Aggregate epidemiology by state, disease, quarter; diagnostic-delay metrics; CoE coverage gaps; CSV export |
+```
+Day 1, 10:00 AM   Patient submits: "tired all the time, big belly,
+                  bruises for no reason, bone pain at night"
 
-Patient consent is required for every flow. The government and researcher views see anonymised aggregates; never identifying records.
+Day 1, 10:05 AM   Doctor adds: "spleen palpable 6 cm below costal margin,
+                  platelets 54k, anaemia, no fever"
+
+Day 1, 10:11 AM   Six specialists return:
+                  ✓  Most likely:   Gaucher disease type 1 (98% confidence)
+                  ✓  Disagreement:  Immunologic flagged ITP — same enzyme
+                                    assay resolves both
+                  ✓  Tier-1 test:   β-glucocerebrosidase enzyme assay (₹2,500)
+                  ✓  Lab:           Sandor Speciality Diagnostics, Hyderabad
+                                    [pre-filled requisition · sample protocol]
+                  ✓  Refer to:      Metabolic Geneticist · FRIGE Ahmedabad (8 km)
+
+Day 1, 10:30 AM   Patient sees treatment-centre map, ₹50 L NPRD eligibility,
+                  next-step timeline, what to expect in clinic.
+
+Day 4             Confirmed enzyme result returns. CoE specialist signs.
+                  NPRD application — already auto-drafted from the case
+                  record — submits to MoHFW.
+
+Week 2            Drug-access dashboard surfaces: Sanofi Genzyme PAP route,
+                  Cipla domestic-supply pathway, ₹50 L NPRD top-up applied.
+
+Week 4            First ERT infusion at FRIGE Ahmedabad.
+                  /patient/dashboard tracks every infusion, every fund
+                  release, every follow-up — for life.
+```
+
+One afternoon for the diagnosis. Three weeks for the medicine. Not seven years for one and never for the other.
 
 ---
 
@@ -214,10 +262,10 @@ Patient consent is required for every flow. The government and researcher views 
 │
 ├── frontend/
 │   └── app/
-│       ├── analyze/        # Live 6-agent progress (SSE)
+│       ├── analyze/        # 6-agent live progress (SSE)
 │       ├── patient/        # submit · dashboard · consent · community
 │       ├── doctor/         # cases · consultations
-│       ├── report/         # final differential + CoE map
+│       ├── report/         # final differential + CoE map + test cascade
 │       ├── research/       # cohort queries · formal data requests
 │       ├── government/     # epidemiology dashboard
 │       ├── admin/          # users · data-access requests
@@ -239,6 +287,7 @@ Patient consent is required for every flow. The government and researcher views 
 | NPRD funding application approval rate | **30%** | Ministry of Health — RTI |
 | Total raised on the official crowdfunding portal since 2021 | **₹2.93 lakh** | (need: ₹91 billion) |
 | Centres of Excellence in India | **12** | 20 of 28 states have none |
+| Enzyme-assay & sequencing labs nationwide | **5** | almost all in metros |
 
 Yes, ~70 million Indians live with some form of rare disease — but most public conversation gets stuck on that headline. The numbers above are the ones that actually decide whether a child with a treatable disease lives or dies.
 
@@ -246,30 +295,31 @@ Yes, ~70 million Indians live with some form of rare disease — but most public
 
 ## Real cases that shaped this product
 
-| Patient | Disease | What broke |
+| Patient | Disease | Which link broke |
 |---|---|---|
-| Arohi Kajabe (rural Maharashtra) | Gaucher type 1 | NPRD application never approved — father sold land, borrowed $6,000, daughter died |
-| 12-year-old girl, malaria-endemic India | Gaucher | Positive malaria test "explained" splenomegaly — diagnosis came years later |
-| 12-year-old boy, rural Maharashtra | Wilson's disease | Rural facility had no slit-lamp — KF rings missed; diagnosed at autopsy |
-| Shaurya Singh, 13 | Hunter Syndrome | ₹50-lakh cap exhausted; ₹1.8 cr/yr drug priced out — died August 2025 |
-| Nidhi Shirol | Pompe (India's first known case) | Lived 17 years on ERT — UPS battery on ventilator failed silently. Died 2017, age 24. |
+| Arohi Kajabe (rural Maharashtra) | Gaucher type 1 | Link 03 — NPRD application never approved; father sold land, daughter died |
+| 12-year-old girl, malaria-endemic India | Gaucher | Link 01 — positive malaria test "explained" splenomegaly; diagnosed years late |
+| 12-year-old boy, rural Maharashtra | Wilson's disease | Link 02 — rural facility had no slit-lamp; Kayser-Fleischer rings missed; diagnosed at autopsy |
+| Shaurya Singh, 13 | Hunter Syndrome | Link 04 — ₹50 L cap exhausted; ₹1.8 cr/yr drug priced out; died August 2025 |
+| Nidhi Shirol | Pompe (India's first known case) | Link 05 — lived 17 years on ERT; ventilator UPS battery failed silently in 2017 |
 
-Each of these is a link in the chain Nidaan is built to hold.
+Each of these is a link Nidaan is built to hold.
 
 ---
 
 ## What Nidaan is not
 
-- **Not a diagnosis tool.** It produces a ranked differential with evidence; the doctor confirms.
-- **Not a replacement for a geneticist.** It helps the GP decide *when and how* to refer.
-- **Not a patient-facing diagnostic.** Patients submit; doctors interpret.
+- **Not just a diagnostic tool.** Diagnosis without lab routing, funding, drug access, and follow-up is a half-built bridge. Nidaan ships all five.
+- **Not a replacement for a geneticist.** It helps the GP decide *when and how* to refer — and lets the specialist start from a pre-screened, structured case.
+- **Not a patient-facing diagnostic.** Patients submit and track; clinicians interpret and confirm.
 - **Not a general rare-disease encyclopedia.** It covers three categories deeply — metabolic, neurogenetic, immunologic — chosen to match the Indian rare-disease burden distribution.
+- **Not vaporware.** Every screen in the journey above maps to a real route in `frontend/app/`. The diagnostic engine is `backend/pipeline.py`. The CoE registry is `frontend/lib/centers.ts`. Open the repo.
 
 ---
 
 ## Acknowledgements
 
-The clinical framing draws on real reporting from *Global Health NOW*, *The Indian Express*, *SCMP*, *Indian J. of Pathology and Oncology*, PubMed central case reports, and the work of ORDI (Organization for Rare Diseases India) — co-founded by Prasanna Shirol, Nidhi's father, who turned his loss into the country's first rare-disease patient advocacy organisation.
+The clinical framing draws on real reporting from *Global Health NOW*, *The Indian Express*, *SCMP*, *Indian J. of Pathology and Oncology*, PubMed central case reports, and the work of **ORDI** (Organization for Rare Diseases India) — co-founded by Prasanna Shirol, Nidhi's father, who turned his loss into the country's first rare-disease patient advocacy organisation.
 
 The legal precedent — *Master Arnesh Shaw v. Union of India* (Delhi High Court, October 2024) — established the obligation to provide rare-disease care. The Supreme Court hears the Union government's appeal in **March 2026**. The clinical infrastructure to act on a favourable ruling does not yet exist.
 
@@ -283,6 +333,7 @@ That is the gap Nidaan is built into.
 
 Built for the Claude × IIT Bombay Hackathon · May 2026
 
-*The funding exists. The labs exist. The specialists exist. We are the connective tissue between them.*
+*The funding exists. The labs exist. The specialists exist. The drugs exist.*
+*We are the connective tissue between them.*
 
 </div>
