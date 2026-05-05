@@ -1,0 +1,1262 @@
+{
+  "cases": [
+    {
+      "id": "case-4a1f",
+      "createdBy": "u1",
+      "patientId": "u3",
+      "patientSummary": "Male, 39, Ahmedabad \u2014 10 months of fatigue, progressive splenomegaly, thrombocytopenia",
+      "caseText": "Patient: Male, 39 years old, Ahmedabad, Gujarat\nFamily: Parents are first cousins (consanguineous marriage)\n\nPresenting complaints (10 months):\n- Progressively worsening fatigue and weakness\n- Dragging sensation and visible fullness in the left upper abdomen\n- Frequent bruising; 2 episodes of spontaneous nosebleed\n- No fever, no lymphadenopathy\n\nFindings:\n- Massive splenomegaly (spleen palpable 12 cm below costal margin)\n- Hepatomegaly (liver 4 cm below costal margin)\n- CBC: Hb 8.2, Platelet 54,000, WBC 3.1\n- LFTs mildly elevated (AST 52, ALT 61)\n- Bone pain reported in bilateral femurs\n\nPrevious diagnoses (all incorrect): Idiopathic thrombocytopenic purpura, chronic malarial splenomegaly",
+      "aiResult": null,
+      "demoId": "gaucher",
+      "status": "confirmed",
+      "confirmedAt": "2026-03-18T09:14:00Z",
+      "confirmedDiagnosisName": "Gaucher disease type 1",
+      "confirmedOmimId": "230800",
+      "confirmedOrphaCode": "355",
+      "confirmedGene": "GBA",
+      "confirmedVariant": "N370S",
+      "symptomOnsetDate": "2025-05-01",
+      "doctorState": "Gujarat",
+      "createdAt": "2026-03-04T11:22:00Z",
+      "updatedAt": "2026-03-18T09:14:00Z",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "overrideJustification": null
+    },
+    {
+      "id": "case-7c3e",
+      "createdBy": "u1",
+      "patientId": null,
+      "patientSummary": "Female, 8 months, Pune \u2014 progressive hypotonia, feeding difficulty since 3 months",
+      "caseText": "Patient: Female infant, 8 months, Pune, Maharashtra\nFamily: No consanguinity\n\nPresenting: Progressive hypotonia, floppy infant since 3 months\nFeeding: Difficulty swallowing, nasogastric tube feeds since 6 weeks\nMotor: Never achieved head control; absent deep tendon reflexes\nBreathing: Paradoxical breathing pattern, reduced cry volume",
+      "aiResult": null,
+      "demoId": "sma",
+      "status": "confirmed",
+      "confirmedAt": "2026-04-02T14:30:00Z",
+      "confirmedDiagnosisName": "Spinal muscular atrophy type II",
+      "confirmedOmimId": "253550",
+      "confirmedOrphaCode": "83418",
+      "confirmedGene": "SMN1",
+      "confirmedVariant": null,
+      "symptomOnsetDate": "2025-08-01",
+      "doctorState": "Maharashtra",
+      "createdAt": "2026-03-28T10:05:00Z",
+      "updatedAt": "2026-04-02T14:30:00Z",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "overrideJustification": null
+    },
+    {
+      "id": "case-9f2b",
+      "createdBy": "u1",
+      "patientId": null,
+      "patientSummary": "Male, 16, Nagpur \u2014 liver disease with tremors and Kayser-Fleischer rings",
+      "caseText": "Patient: Male, 16 years, Nagpur, Maharashtra\nFamily: Parents non-consanguineous, maternal uncle died of liver disease aged 22\n\nPresenting: 8 months progressive jaundice, tremors, personality change\nFindings: Hepatomegaly, splenomegaly, Kayser-Fleischer rings on slit-lamp, ALT 340",
+      "aiResult": null,
+      "demoId": "wilson",
+      "status": "draft",
+      "confirmedAt": null,
+      "confirmedDiagnosisName": null,
+      "confirmedOmimId": null,
+      "confirmedOrphaCode": null,
+      "confirmedGene": null,
+      "confirmedVariant": null,
+      "symptomOnsetDate": "2025-08-01",
+      "doctorState": "Maharashtra",
+      "createdAt": "2026-04-20T08:40:00Z",
+      "updatedAt": "2026-04-20T08:40:00Z",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "overrideJustification": null
+    },
+    {
+      "id": "case-2d8a",
+      "createdBy": "u1",
+      "patientId": null,
+      "patientSummary": "Male, 4, Kolhapur \u2014 recurrent infections, eczema, low platelets since birth",
+      "caseText": "Patient: Male, 4 years, Kolhapur, Maharashtra\nFamily: X-linked family history, maternal grandfather died of infections aged 6\n\nPresenting: Recurrent sinopulmonary infections, severe eczema, thrombocytopenia\nIgM elevated, IgG low, small-volume platelets on smear",
+      "aiResult": null,
+      "demoId": "wiskott-aldrich",
+      "status": "draft",
+      "confirmedAt": null,
+      "confirmedDiagnosisName": null,
+      "confirmedOmimId": null,
+      "confirmedOrphaCode": null,
+      "confirmedGene": null,
+      "confirmedVariant": null,
+      "symptomOnsetDate": "2022-06-01",
+      "doctorState": "Maharashtra",
+      "createdAt": "2026-04-25T16:15:00Z",
+      "updatedAt": "2026-04-25T16:15:00Z",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "overrideJustification": null
+    },
+    {
+      "id": "case-1416bb96",
+      "createdBy": "u1",
+      "patientId": "c-u101",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Adult, Gujarat \u2014 splenomegaly, pancytopenia, bone pain (10\u201314 mo)",
+      "caseText": "[Seeded cohort case \u00b7 Gaucher disease type 1 \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2026-03-21T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Gaucher disease type 1",
+      "confirmedOmimId": "230800",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "GBA",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-07-14",
+      "doctorState": "Gujarat",
+      "createdAt": "2026-03-07T07:25:16.376740Z",
+      "updatedAt": "2026-03-21T07:25:16.376740Z"
+    },
+    {
+      "id": "case-d4f28f2c",
+      "createdBy": "u1",
+      "patientId": "c-u102",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Adult, Gujarat \u2014 splenomegaly, pancytopenia, bone pain (10\u201314 mo)",
+      "caseText": "[Seeded cohort case \u00b7 Gaucher disease type 1 \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2026-02-22T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Gaucher disease type 1",
+      "confirmedOmimId": "230800",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "GBA",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-06-17",
+      "doctorState": "Gujarat",
+      "createdAt": "2026-02-08T07:25:16.376740Z",
+      "updatedAt": "2026-02-22T07:25:16.376740Z"
+    },
+    {
+      "id": "case-831d427d",
+      "createdBy": "u1",
+      "patientId": "c-u103",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Adult, Maharashtra \u2014 splenomegaly, pancytopenia, bone pain (10\u201314 mo)",
+      "caseText": "[Seeded cohort case \u00b7 Gaucher disease type 1 \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2026-02-04T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Gaucher disease type 1",
+      "confirmedOmimId": "230800",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "GBA",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-05-30",
+      "doctorState": "Maharashtra",
+      "createdAt": "2026-01-21T07:25:16.376740Z",
+      "updatedAt": "2026-02-04T07:25:16.376740Z"
+    },
+    {
+      "id": "case-6879d13f",
+      "createdBy": "u1",
+      "patientId": "c-u104",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Adult, Tamil Nadu \u2014 splenomegaly, pancytopenia, bone pain (10\u201314 mo)",
+      "caseText": "[Seeded cohort case \u00b7 Gaucher disease type 1 \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2026-01-05T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Gaucher disease type 1",
+      "confirmedOmimId": "230800",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "GBA",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-04-30",
+      "doctorState": "Tamil Nadu",
+      "createdAt": "2025-12-22T07:25:16.376740Z",
+      "updatedAt": "2026-01-05T07:25:16.376740Z"
+    },
+    {
+      "id": "case-bc6cb608",
+      "createdBy": "u1",
+      "patientId": "c-u105",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Adult, Karnataka \u2014 splenomegaly, pancytopenia, bone pain (10\u201314 mo)",
+      "caseText": "[Seeded cohort case \u00b7 Gaucher disease type 1 \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2025-12-06T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Gaucher disease type 1",
+      "confirmedOmimId": "230800",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "GBA",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-03-31",
+      "doctorState": "Karnataka",
+      "createdAt": "2025-11-22T07:25:16.376740Z",
+      "updatedAt": "2025-12-06T07:25:16.376740Z"
+    },
+    {
+      "id": "case-e4434c13",
+      "createdBy": "u1",
+      "patientId": "c-u106",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Infant, Maharashtra \u2014 progressive hypotonia, feeding difficulty (3\u20138 mo)",
+      "caseText": "[Seeded cohort case \u00b7 Spinal muscular atrophy type II \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2026-04-05T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Spinal muscular atrophy type II",
+      "confirmedOmimId": "253550",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "SMN1",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-11-14",
+      "doctorState": "Maharashtra",
+      "createdAt": "2026-03-22T07:25:16.376740Z",
+      "updatedAt": "2026-04-05T07:25:16.376740Z"
+    },
+    {
+      "id": "case-ae64a171",
+      "createdBy": "u1",
+      "patientId": "c-u107",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Infant, Maharashtra \u2014 progressive hypotonia, feeding difficulty (3\u20138 mo)",
+      "caseText": "[Seeded cohort case \u00b7 Spinal muscular atrophy type II \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2026-03-06T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Spinal muscular atrophy type II",
+      "confirmedOmimId": "253550",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "SMN1",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-10-15",
+      "doctorState": "Maharashtra",
+      "createdAt": "2026-02-20T07:25:16.376740Z",
+      "updatedAt": "2026-03-06T07:25:16.376740Z"
+    },
+    {
+      "id": "case-67c490c6",
+      "createdBy": "u1",
+      "patientId": "c-u108",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Infant, Karnataka \u2014 progressive hypotonia, feeding difficulty (3\u20138 mo)",
+      "caseText": "[Seeded cohort case \u00b7 Spinal muscular atrophy type II \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2026-01-25T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Spinal muscular atrophy type II",
+      "confirmedOmimId": "253550",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "SMN1",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-09-05",
+      "doctorState": "Karnataka",
+      "createdAt": "2026-01-11T07:25:16.376740Z",
+      "updatedAt": "2026-01-25T07:25:16.376740Z"
+    },
+    {
+      "id": "case-fa0d94e5",
+      "createdBy": "u1",
+      "patientId": "c-u109",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Infant, Tamil Nadu \u2014 progressive hypotonia, feeding difficulty (3\u20138 mo)",
+      "caseText": "[Seeded cohort case \u00b7 Spinal muscular atrophy type II \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2025-12-26T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Spinal muscular atrophy type II",
+      "confirmedOmimId": "253550",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "SMN1",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-08-06",
+      "doctorState": "Tamil Nadu",
+      "createdAt": "2025-12-12T07:25:16.376740Z",
+      "updatedAt": "2025-12-26T07:25:16.376740Z"
+    },
+    {
+      "id": "case-e6eee785",
+      "createdBy": "u1",
+      "patientId": "c-u110",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Adolescent, Maharashtra \u2014 liver dysfunction, KF rings, tremor (8\u201312 mo)",
+      "caseText": "[Seeded cohort case \u00b7 Wilson disease \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2026-04-15T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Wilson disease",
+      "confirmedOmimId": "277900",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "ATP7B",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-09-29",
+      "doctorState": "Maharashtra",
+      "createdAt": "2026-04-01T07:25:16.376740Z",
+      "updatedAt": "2026-04-15T07:25:16.376740Z"
+    },
+    {
+      "id": "case-80bd312d",
+      "createdBy": "u1",
+      "patientId": "c-u111",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Adolescent, Maharashtra \u2014 liver dysfunction, KF rings, tremor (8\u201312 mo)",
+      "caseText": "[Seeded cohort case \u00b7 Wilson disease \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2026-02-09T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Wilson disease",
+      "confirmedOmimId": "277900",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "ATP7B",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-07-26",
+      "doctorState": "Maharashtra",
+      "createdAt": "2026-01-26T07:25:16.376740Z",
+      "updatedAt": "2026-02-09T07:25:16.376740Z"
+    },
+    {
+      "id": "case-543c2036",
+      "createdBy": "u1",
+      "patientId": "c-u112",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Adolescent, Karnataka \u2014 liver dysfunction, KF rings, tremor (8\u201312 mo)",
+      "caseText": "[Seeded cohort case \u00b7 Wilson disease \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2026-01-15T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Wilson disease",
+      "confirmedOmimId": "277900",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "ATP7B",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-07-01",
+      "doctorState": "Karnataka",
+      "createdAt": "2026-01-01T07:25:16.376740Z",
+      "updatedAt": "2026-01-15T07:25:16.376740Z"
+    },
+    {
+      "id": "case-e582618f",
+      "createdBy": "u1",
+      "patientId": "c-u113",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Adolescent, Kerala \u2014 liver dysfunction, KF rings, tremor (8\u201312 mo)",
+      "caseText": "[Seeded cohort case \u00b7 Wilson disease \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2025-11-11T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Wilson disease",
+      "confirmedOmimId": "277900",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "ATP7B",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-04-27",
+      "doctorState": "Kerala",
+      "createdAt": "2025-10-28T07:25:16.376740Z",
+      "updatedAt": "2025-11-11T07:25:16.376740Z"
+    },
+    {
+      "id": "case-48de5dd2",
+      "createdBy": "u1",
+      "patientId": "c-u114",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Adolescent, Telangana \u2014 liver dysfunction, KF rings, tremor (8\u201312 mo)",
+      "caseText": "[Seeded cohort case \u00b7 Wilson disease \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2025-10-17T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Wilson disease",
+      "confirmedOmimId": "277900",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "ATP7B",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-04-02",
+      "doctorState": "Telangana",
+      "createdAt": "2025-10-03T07:25:16.376740Z",
+      "updatedAt": "2025-10-17T07:25:16.376740Z"
+    },
+    {
+      "id": "case-8f0b417f",
+      "createdBy": "u1",
+      "patientId": "c-u115",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Male child, Tamil Nadu \u2014 calf pseudohypertrophy, CK >10,000 (24+ mo)",
+      "caseText": "[Seeded cohort case \u00b7 Duchenne muscular dystrophy \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2026-03-26T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Duchenne muscular dystrophy",
+      "confirmedOmimId": "310200",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "DMD",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-05-18",
+      "doctorState": "Tamil Nadu",
+      "createdAt": "2026-03-12T07:25:16.376740Z",
+      "updatedAt": "2026-03-26T07:25:16.376740Z"
+    },
+    {
+      "id": "case-39aaab2b",
+      "createdBy": "u1",
+      "patientId": "c-u116",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Male child, Karnataka \u2014 calf pseudohypertrophy, CK >10,000 (24+ mo)",
+      "caseText": "[Seeded cohort case \u00b7 Duchenne muscular dystrophy \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2026-02-14T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Duchenne muscular dystrophy",
+      "confirmedOmimId": "310200",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "DMD",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-04-08",
+      "doctorState": "Karnataka",
+      "createdAt": "2026-01-31T07:25:16.376740Z",
+      "updatedAt": "2026-02-14T07:25:16.376740Z"
+    },
+    {
+      "id": "case-03f7d030",
+      "createdBy": "u1",
+      "patientId": "c-u117",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Male child, West Bengal \u2014 calf pseudohypertrophy, CK >10,000 (24+ mo)",
+      "caseText": "[Seeded cohort case \u00b7 Duchenne muscular dystrophy \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2025-12-16T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Duchenne muscular dystrophy",
+      "confirmedOmimId": "310200",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "DMD",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-02-07",
+      "doctorState": "West Bengal",
+      "createdAt": "2025-12-02T07:25:16.376740Z",
+      "updatedAt": "2025-12-16T07:25:16.376740Z"
+    },
+    {
+      "id": "case-c3fa7b52",
+      "createdBy": "u1",
+      "patientId": "c-u118",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Male child, Maharashtra \u2014 calf pseudohypertrophy, CK >10,000 (24+ mo)",
+      "caseText": "[Seeded cohort case \u00b7 Duchenne muscular dystrophy \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2025-11-21T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Duchenne muscular dystrophy",
+      "confirmedOmimId": "310200",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "DMD",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-01-13",
+      "doctorState": "Maharashtra",
+      "createdAt": "2025-11-07T07:25:16.376740Z",
+      "updatedAt": "2025-11-21T07:25:16.376740Z"
+    },
+    {
+      "id": "case-108bfc50",
+      "createdBy": "u1",
+      "patientId": "c-u119",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Male infant, Maharashtra \u2014 eczema, recurrent infections, low platelets",
+      "caseText": "[Seeded cohort case \u00b7 Wiskott-Aldrich syndrome \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2026-03-11T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Wiskott-Aldrich syndrome",
+      "confirmedOmimId": "301000",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "WAS",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-10-06",
+      "doctorState": "Maharashtra",
+      "createdAt": "2026-02-25T07:25:16.376740Z",
+      "updatedAt": "2026-03-11T07:25:16.376740Z"
+    },
+    {
+      "id": "case-76de10e6",
+      "createdBy": "u1",
+      "patientId": "c-u120",
+      "submittedBy": "doctor",
+      "patientSubmittedText": null,
+      "doctorAddedText": null,
+      "patientSummary": "Male infant, Tamil Nadu \u2014 eczema, recurrent infections, low platelets",
+      "caseText": "[Seeded cohort case \u00b7 Wiskott-Aldrich syndrome \u00b7 confirmed at CoE]",
+      "aiResult": null,
+      "demoId": null,
+      "status": "confirmed",
+      "confirmedAt": "2026-01-20T07:25:16.376740Z",
+      "confirmedDiagnosisName": "Wiskott-Aldrich syndrome",
+      "confirmedOmimId": "301000",
+      "confirmedOrphaCode": null,
+      "confirmedGene": "WAS",
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2025-08-17",
+      "doctorState": "Tamil Nadu",
+      "createdAt": "2026-01-06T07:25:16.376740Z",
+      "updatedAt": "2026-01-20T07:25:16.376740Z"
+    },
+    {
+      "createdBy": "u1",
+      "patientId": "u3",
+      "submittedBy": "patient",
+      "patientSubmittedText": "Age: 28\nSex: Male\nState: Maharashtra\nSymptom onset: 2015-03-28\nFamily history: My maternal uncle (mama) died at 42 of kidney failure \u2014 doctors said \"unknown cause.\" My mother has occasional pain in her     \n  \u258e hands but much milder than mine. My grandmother (nani) on my mother's side had heart problems.\nSymptoms (in patient's own words):\n  \u258e For the last 6 years (started around age 22), I get these episodes of intense burning pain in my hands and feet \u2014 like fire,   \n  \u258e like hot needles. It comes and goes, often triggered by exercise, fever, or hot weather. Most doctors have told me it's \n  \u258e anxiety. I've taken painkillers, ayurvedic treatments, physiotherapy. Nothing changes the pattern.                             \n  \u258e                                                                                                                                \n  \u258e I sweat very little \u2014 even when everyone around me is sweating from the Mumbai heat, I just feel hot but my body doesn't sweat.\n  \u258e  My mother always said I was \"just dry-skinned\" since I was a teenager.                                                        \n  \u258e                                                                  \n  \u258e I have small dark red spots on my lower back and around my belly button \u2014 like tiny dots, flat, not raised. A skin doctor said \n  \u258e they were \"just freckles.\" They've been increasing slowly. Some sit just below the swimsuit line.\n  \u258e                                                                                                                                \n  \u258e In the last year I'm tired faster, my heart sometimes races for no reason, and my urine occasionally looks foamy. A GP said my \n  \u258e creatinine was \"borderline high\" and told me to drink more water.",
+      "doctorAddedText": " Examination (28M, Mumbai):                                                                                                     \n  \u258e - Multiple punctate angiokeratomas on lower back, periumbilical, and \"swimsuit\" distribution \u2014 bilateral\n  \u258e - Hypohidrosis confirmed on history; reduced palmar sweating on exam                                                           \n  \u258e - Slit-lamp ophthalmology: bilateral corneal whorl-like opacities (cornea verticillata) noted\n  \u258e - BP 142/90 (elevated); echo shows mild concentric LVH                                                                         \n  \u258e - Urine: 2+ proteinuria; serum creatinine 1.4 mg/dL                                                                            \n  \u258e - Neuro: distal small-fibre sensory loss to pinprick on hands/feet; otherwise normal                                           \n  \u258e - Family pedigree: classic X-linked recessive pattern (maternal uncle ESRD, mild affected mother, maternal grandmother cardiac)",
+      "patientSummary": "  \u258e For the last 6 years (started around age 22), I get these episodes of intense burning pain in my hands and feet \u2014 li",
+      "caseText": "--- Patient's own description ---\nAge: 28\nSex: Male\nState: Maharashtra\nSymptom onset: 2015-03-28\nFamily history: My maternal uncle (mama) died at 42 of kidney failure \u2014 doctors said \"unknown cause.\" My mother has occasional pain in her     \n  \u258e hands but much milder than mine. My grandmother (nani) on my mother's side had heart problems.\nSymptoms (in patient's own words):\n  \u258e For the last 6 years (started around age 22), I get these episodes of intense burning pain in my hands and feet \u2014 like fire,   \n  \u258e like hot needles. It comes and goes, often triggered by exercise, fever, or hot weather. Most doctors have told me it's \n  \u258e anxiety. I've taken painkillers, ayurvedic treatments, physiotherapy. Nothing changes the pattern.                             \n  \u258e                                                                                                                                \n  \u258e I sweat very little \u2014 even when everyone around me is sweating from the Mumbai heat, I just feel hot but my body doesn't sweat.\n  \u258e  My mother always said I was \"just dry-skinned\" since I was a teenager.                                                        \n  \u258e                                                                  \n  \u258e I have small dark red spots on my lower back and around my belly button \u2014 like tiny dots, flat, not raised. A skin doctor said \n  \u258e they were \"just freckles.\" They've been increasing slowly. Some sit just below the swimsuit line.\n  \u258e                                                                                                                                \n  \u258e In the last year I'm tired faster, my heart sometimes races for no reason, and my urine occasionally looks foamy. A GP said my \n  \u258e creatinine was \"borderline high\" and told me to drink more water.\n\n--- Doctor's clinical observations ---\n Examination (28M, Mumbai):                                                                                                     \n  \u258e - Multiple punctate angiokeratomas on lower back, periumbilical, and \"swimsuit\" distribution \u2014 bilateral\n  \u258e - Hypohidrosis confirmed on history; reduced palmar sweating on exam                                                           \n  \u258e - Slit-lamp ophthalmology: bilateral corneal whorl-like opacities (cornea verticillata) noted\n  \u258e - BP 142/90 (elevated); echo shows mild concentric LVH                                                                         \n  \u258e - Urine: 2+ proteinuria; serum creatinine 1.4 mg/dL                                                                            \n  \u258e - Neuro: distal small-fibre sensory loss to pinprick on hands/feet; otherwise normal                                           \n  \u258e - Family pedigree: classic X-linked recessive pattern (maternal uncle ESRD, mild affected mother, maternal grandmother cardiac)",
+      "aiResult": {
+        "screener": {
+          "proceed_to_rare_workup": true,
+          "screener_note": "This 28-year-old male presents with a 6-year history of acral neuropathic pain, confirmed hypohidrosis, pathognomonic corneal verticillata on slit-lamp, punctate angiokeratomas in typical distribution, and progressive renal/cardiac involvement. The family pedigree (X-linked ESRD in maternal uncle, mild phenotype in heterozygous mother) and the multi-system constellation are diagnostic red flags for Fabry disease (\u03b1-galactosidase A deficiency). Proceed immediately to plasma/leucocyte \u03b1-galactosidase A activity and GLA gene sequencing. This is a rare disease that explains the complete picture and carries treatment implications (enzyme replacement therapy, chaperone therapy).",
+          "common_conditions_considered": [
+            "Anxiety disorder (initially diagnosed by multiple doctors)",
+            "Nutritional neuropathy",
+            "Diabetic neuropathy (no diabetes documented)",
+            "Idiopathic hypertension with LVH",
+            "Chronic kidney disease of unknown etiology"
+          ]
+        },
+        "hpo_terms": [
+          {
+            "id": "HP:0031006",
+            "name": "Acroparesthesia",
+            "onset": "age 22 (6 years duration at age 28)",
+            "severity": "severe"
+          },
+          {
+            "id": "HP:0034012",
+            "name": "Palmoplantar hypohidrosis",
+            "onset": "since teenage years",
+            "severity": "moderate"
+          },
+          {
+            "id": "HP:0001014",
+            "name": "Angiokeratoma",
+            "onset": "unknown, increasing slowly",
+            "severity": "moderate"
+          },
+          {
+            "id": "HP:0500008",
+            "name": "Cornea verticillata",
+            "onset": "unknown",
+            "severity": "mild"
+          },
+          {
+            "id": "HP:0007067",
+            "name": "Distal peripheral sensory neuropathy",
+            "onset": "age 22",
+            "severity": "moderate"
+          },
+          {
+            "id": "HP:0012596",
+            "name": "Moderate proteinuria",
+            "onset": "unknown, noted at age 28",
+            "severity": "moderate"
+          },
+          {
+            "id": "HP:0003259",
+            "name": "Elevated circulating creatinine concentration",
+            "onset": "borderline high at age 28, chronic",
+            "severity": "mild"
+          },
+          {
+            "id": "HP:0000822",
+            "name": "Hypertension",
+            "onset": "noted at age 28",
+            "severity": "mild"
+          },
+          {
+            "id": "HP:0001649",
+            "name": "Tachycardia",
+            "onset": "last year (age 27-28)",
+            "severity": "mild"
+          },
+          {
+            "id": "HP:0001712",
+            "name": "Left ventricular hypertrophy",
+            "onset": "noted at age 28",
+            "severity": "mild"
+          },
+          {
+            "id": "HP:0012378",
+            "name": "Fatigue",
+            "onset": "last year (age 27-28)",
+            "severity": "mild"
+          }
+        ],
+        "unified_differential": [
+          {
+            "rank": 1,
+            "disease_name": "Fabry Disease (Anderson-Fabry Disease, \u03b1-galactosidase A deficiency)",
+            "omim_id": "301500",
+            "orpha_code": "324",
+            "confidence": "high",
+            "confidence_pct": 97,
+            "flagged_by": [
+              "Neurogenetic",
+              "Immunologic"
+            ],
+            "supporting_features": [
+              "Pathognomonic triad: thermosensitive acroparesthesia (burning pain in hands/feet triggered by exercise, fever, heat) + angiokeratoma corporis diffusum in classic swimsuit/periumbilical/lower-back distribution + palmoplantar hypohidrosis since adolescence",
+              "Cornea verticillata on slit-lamp \u2014 near-pathognomonic in an unmedicated young male (amiodarone/chloroquine excluded); seen in >90% of classic hemizygous males",
+              "Distal small-fibre sensory neuropathy on examination \u2014 Gb3 accumulation in dorsal root ganglia (A\u03b4 and C fibres)",
+              "Early Fabry nephropathy: moderate proteinuria (2+), borderline creatinine 1.4 mg/dL, hypertension \u2014 Gb3 in podocytes/tubular cells",
+              "Concentric LVH on echocardiography with episodic tachycardia \u2014 early Fabry cardiomyopathy in 3rd-4th decade",
+              "Textbook X-linked recessive pedigree: maternal uncle ESRD at 42 (hemizygous), mother with mild hand pain (obligate carrier), maternal grandmother with cardiac disease",
+              "Multi-system involvement (neuro + derm + renal + cardiac) explained by a single locus (GLA)",
+              "Classic 6-year diagnostic delay misattributed to anxiety \u2014 matches global Fabry diagnostic odyssey pattern",
+              "Age 28 male at canonical inflection point in untreated classic Fabry natural history"
+            ],
+            "non_matching_features": [
+              "No GI symptoms (diarrhoea, post-prandial pain) \u2014 present in ~50% of classic Fabry; absence does not argue against diagnosis",
+              "No stroke/TIA yet \u2014 expected later in natural history",
+              "Enzyme activity, lyso-Gb3 and GLA genotype not yet confirmed \u2014 diagnosis is clinical at this stage"
+            ],
+            "confirmatory_tests": [
+              {
+                "test": "Urine sediment for mulberry cells (Maltese cross inclusions on polarised/phase-contrast microscopy)",
+                "yield_level": "Highly specific supportive finding for Fabry nephropathy. Cheap, fast adjunct.",
+                "cost_inr": "\u20b9500\u20131,500",
+                "cost_tier": "low"
+              },
+              {
+                "test": "Leukocyte or dried-blood-spot \u03b1-galactosidase A (\u03b1-Gal A) enzyme activity assay",
+                "yield_level": "DEFINITIVE in hemizygous males: <1% activity confirms classic Fabry; 1\u201310% suggests late-onset variant. Result in 5\u201310 days. NOT reliable in carrier females.",
+                "cost_inr": "\u20b93,000\u20138,000",
+                "cost_tier": "low"
+              },
+              {
+                "test": "Plasma lyso-Gb3 (globotriaosylsphingosine) by LC-MS/MS",
+                "yield_level": "Highly sensitive biomarker; elevated in virtually all classic Fabry males (often >10 nmol/L vs normal <2). Tracks treatment response. Preferred when enzyme is borderline.",
+                "cost_inr": "\u20b95,000\u201315,000",
+                "cost_tier": "moderate"
+              },
+              {
+                "test": "GLA gene full sequencing + del/dup analysis",
+                "yield_level": "Confirms causative variant; required for cascade screening of mother/female relatives, migalastat amenability assessment, and ERT documentation.",
+                "cost_inr": "\u20b95,000\u201318,000",
+                "cost_tier": "moderate"
+              },
+              {
+                "test": "MRI brain with FLAIR (white matter and pulvinar sign screening)",
+                "yield_level": "Detects silent cerebrovascular disease and pulvinar T1 hyperintensity (Fabry feature). Baseline before ERT.",
+                "cost_inr": "\u20b98,000\u201315,000",
+                "cost_tier": "moderate"
+              },
+              {
+                "test": "Cardiac MRI with late gadolinium enhancement",
+                "yield_level": "Inferolateral LGE pattern is characteristic of Fabry cardiomyopathy and distinguishes it from hypertensive/sarcomeric HCM. Essential baseline before ERT.",
+                "cost_inr": "\u20b915,000\u201325,000",
+                "cost_tier": "high"
+              },
+              {
+                "test": "Skin biopsy with EM (zebra bodies) \u2014 only if enzyme/genetics equivocal",
+                "yield_level": "Lamellar Gb3 inclusions in vascular endothelium. Not needed if enzyme + genetics confirmatory.",
+                "cost_inr": "\u20b94,000\u20138,000",
+                "cost_tier": "moderate"
+              },
+              {
+                "test": "Kidney biopsy with EM \u2014 only if needed to stage nephropathy",
+                "yield_level": "Pathognomonic zebra bodies in podocytes. Defer until after enzyme/genetic confirmation.",
+                "cost_inr": "\u20b915,000\u201330,000",
+                "cost_tier": "high"
+              },
+              {
+                "test": "GLA cascade testing in mother and maternal relatives",
+                "yield_level": "Mother is obligate carrier; enzyme is unreliable in females so sequencing is required. Maternal uncle's children urgently need screening.",
+                "cost_inr": "\u20b98,000\u201318,000 per person",
+                "cost_tier": "moderate"
+              }
+            ]
+          },
+          {
+            "rank": 2,
+            "disease_name": "Hereditary Primary Erythromelalgia (SCN9A gain-of-function)",
+            "omim_id": "133020",
+            "orpha_code": "90026",
+            "confidence": "low",
+            "confidence_pct": 4,
+            "flagged_by": [
+              "Neurogenetic",
+              "Immunologic"
+            ],
+            "supporting_features": [
+              "Episodic burning pain in hands and feet triggered by heat and exercise \u2014 superficial overlap with Fabry acroparesthesia",
+              "Small-fibre neuropathy phenotype (Nav1.7 expressed in DRG)",
+              "Maternal hand pain could theoretically represent mild AD expression"
+            ],
+            "non_matching_features": [
+              "Autosomal dominant SCN9A inheritance is incompatible with the X-linked pedigree (maternal uncle ESRD, carrier mother)",
+              "Erythromelalgia produces visible erythema/warmth during attacks \u2014 not described here",
+              "No angiokeratomas, no cornea verticillata, no nephropathy, no LVH \u2014 none explained by SCN9A",
+              "Hypohidrosis is not a feature; if anything, hyperhidrosis is more typical",
+              "Accounts for 1 of 11 HPO terms; Fabry accounts for all 11"
+            ],
+            "confirmatory_tests": [
+              {
+                "test": "SCN9A gene sequencing \u2014 only if Fabry conclusively excluded",
+                "yield_level": "Low yield in this case; reserved as diagnostic exercise if \u03b1-Gal A and GLA sequencing return negative.",
+                "cost_inr": "\u20b95,000\u201320,000",
+                "cost_tier": "moderate"
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "disease_name": "Kanzaki Disease (\u03b1-N-Acetylgalactosaminidase deficiency / Schindler Type II)",
+            "omim_id": "609242",
+            "orpha_code": "97365",
+            "confidence": "low",
+            "confidence_pct": 5,
+            "flagged_by": [
+              "Neurogenetic"
+            ],
+            "supporting_features": [
+              "Angiokeratoma corporis diffusum mirroring Fabry distribution",
+              "Adult-onset lysosomal storage disorder with peripheral neuropathy",
+              "Distal sensory impairment can be reported"
+            ],
+            "non_matching_features": [
+              "Autosomal recessive (NAGA) \u2014 incompatible with X-linked pedigree",
+              "Does not cause heat-/exercise-triggered acroparesthesia",
+              "No cornea verticillata, no significant renal/cardiac storage at this severity",
+              "Hypohidrosis not a feature",
+              "Extremely rare (<30 reported cases worldwide); mild cognitive impairment usually expected"
+            ],
+            "confirmatory_tests": [
+              {
+                "test": "Leukocyte NAGA enzyme activity \u2014 only if \u03b1-Gal A activity is normal",
+                "yield_level": "Second-line exclusionary test; biallelic NAGA mutations on sequencing required for confirmation.",
+                "cost_inr": "\u20b95,000\u201310,000",
+                "cost_tier": "moderate"
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "disease_name": "Fucosidosis",
+            "omim_id": "230000",
+            "orpha_code": "349",
+            "confidence": "low",
+            "confidence_pct": 1,
+            "flagged_by": [
+              "Immunologic"
+            ],
+            "supporting_features": [
+              "Can produce angiokeratomas in a distribution similar to Fabry disease",
+              "Lysosomal storage disorder"
+            ],
+            "non_matching_features": [
+              "Autosomal recessive (FUCA1) \u2014 incompatible with X-linked pedigree",
+              "Causes progressive intellectual disability, coarse facies, dysostosis multiplex \u2014 none present",
+              "No cornea verticillata, no acroparesthesia, no significant nephropathy",
+              "Included only as an angiokeratoma mimic; clinically excluded"
+            ],
+            "confirmatory_tests": [
+              {
+                "test": "Plasma \u03b1-L-fucosidase enzyme activity \u2014 only if Fabry excluded",
+                "yield_level": "Not indicated in this case; included for differential completeness.",
+                "cost_inr": "\u20b94,000\u20138,000",
+                "cost_tier": "moderate"
+              }
+            ]
+          }
+        ],
+        "disagreements": [],
+        "recommended_tests": [
+          {
+            "tier": 1,
+            "name": "Urine sediment for mulberry cells (phase-contrast/polarised microscopy)",
+            "rationale": "Cheapest possible Fabry-specific finding. Lipid-laden tubular epithelial cells with Maltese-cross birefringence are highly specific for Fabry nephropathy and can be done at any laboratory with phase-contrast microscopy today.",
+            "cost_inr": "\u20b9500\u20131,500"
+          },
+          {
+            "tier": 1,
+            "name": "Leukocyte or dried-blood-spot \u03b1-galactosidase A (\u03b1-Gal A) enzyme activity assay",
+            "rationale": "Single most decisive test for this hemizygous male. <1% activity = classic Fabry; result in 5\u201310 days. Order TODAY \u2014 do not wait for genetics. Available via DBS shipped to NIRMAN Mumbai, Medgenome, AIIMS Metabolic Lab, or Manipal.",
+            "cost_inr": "\u20b93,000\u20138,000"
+          },
+          {
+            "tier": 2,
+            "name": "Plasma lyso-Gb3 (globotriaosylsphingosine) by LC-MS/MS",
+            "rationale": "Highly sensitive Fabry biomarker (often >10 nmol/L in classic males vs normal <2). Confirms enzyme result, baselines disease activity, and tracks ERT response. Useful in carrier females where enzyme is unreliable.",
+            "cost_inr": "\u20b95,000\u201315,000"
+          },
+          {
+            "tier": 2,
+            "name": "MRI brain with FLAIR sequences",
+            "rationale": "Baseline screen for silent white-matter disease and pulvinar sign. Required before ERT initiation; cerebrovascular events are a major Fabry morbidity.",
+            "cost_inr": "\u20b98,000\u201315,000"
+          },
+          {
+            "tier": 3,
+            "name": "GLA gene full sequencing + deletion/duplication analysis",
+            "rationale": "Required for: (1) precise mutation identification, (2) migalastat amenability assessment, (3) cascade testing of mother and maternal relatives (enzyme unreliable in females), (4) ERT/named-patient programme documentation.",
+            "cost_inr": "\u20b95,000\u201318,000"
+          },
+          {
+            "tier": 3,
+            "name": "Cardiac MRI with late gadolinium enhancement",
+            "rationale": "Inferolateral LGE differentiates Fabry cardiomyopathy from hypertensive/sarcomeric HCM. Essential baseline before ERT and for cardiac risk stratification (sudden death from arrhythmia).",
+            "cost_inr": "\u20b915,000\u201325,000"
+          },
+          {
+            "tier": 3,
+            "name": "GLA cascade screening in mother and maternal lineage",
+            "rationale": "Mother is an obligate carrier; maternal uncle's children are at 50% risk. Genetic counselling for the entire maternal lineage is essential. Sequencing required (enzyme unreliable in females).",
+            "cost_inr": "\u20b98,000\u201318,000 per person"
+          },
+          {
+            "tier": 3,
+            "name": "Skin or kidney biopsy with electron microscopy",
+            "rationale": "Reserved for cases where enzyme/genetics are equivocal, or where renal staging is needed to escalate ERT urgency. Demonstrates pathognomonic zebra bodies.",
+            "cost_inr": "\u20b94,000\u201330,000"
+          }
+        ],
+        "hpo_referral_summary": "HP:0031006 Acroparesthesia (severe, age 22 / 6-year duration) \u00b7 HP:0034012 Palmoplantar hypohidrosis (moderate, since teenage years) \u00b7 HP:0001014 Angiokeratoma (moderate, slowly progressive) \u00b7 HP:0500008 Cornea verticillata (mild, on slit-lamp) \u00b7 HP:0007067 Distal peripheral sensory neuropathy (moderate, age 22) \u00b7 HP:0012596 Moderate proteinuria (moderate, noted age 28) \u00b7 HP:0003259 Elevated circulating creatinine concentration (mild, chronic, 1.4 mg/dL at age 28) \u00b7 HP:0000822 Hypertension (mild, age 28, 142/90) \u00b7 HP:0001649 Tachycardia (mild, age 27\u201328) \u00b7 HP:0001712 Left ventricular hypertrophy (mild, concentric, age 28) \u00b7 HP:0012378 Fatigue (mild, age 27\u201328)",
+        "specialist_type_recommended": "Adult Metabolic Geneticist (Lysosomal Storage Disorder specialist) with multidisciplinary co-management by Nephrology and Cardiology; Clinical Geneticist for cascade family screening and counselling",
+        "referral_centers": [
+          "AIIMS New Delhi \u2014 Department of Medical Genetics and Metabolic Disease Clinic (\u03b1-Gal A enzyme assay and GLA sequencing in-house; ERT-experienced)",
+          "CMC Vellore \u2014 Clinical Genetics Unit and Department of Nephrology (Fabry ERT programme experience and multidisciplinary monitoring)",
+          "Kokilaben Dhirubhai Ambani Hospital, Mumbai \u2014 Adult Metabolic Disease and Fabry ERT centre (closest to patient's geography)",
+          "KEM Hospital Mumbai \u2014 Clinical Genetics and Nephrology (local Mumbai access for biopsy and follow-up)",
+          "CDFD Hyderabad / Medgenome Bangalore \u2014 Molecular GLA sequencing and lyso-Gb3 reference testing (DBS samples can be shipped from Mumbai)"
+        ],
+        "runtime_seconds": 823.3,
+        "case_conference_narrative": "This 28-year-old man from Mumbai has a 6-year history of burning pain in his hands and feet triggered by heat and exercise, with reduced sweating, 'freckle-like' angiokeratomas across his swimsuit area, whorl-like opacities on the cornea (cornea verticillata), and now early kidney damage (proteinuria, creatinine 1.4 mg/dL), high blood pressure, and thickening of the heart muscle \u2014 a constellation that Fabry disease (OMIM 301500, X-linked \u03b1-galactosidase A deficiency) explains completely and that no common disease explains. Both the Neurogenetic and Immunologic specialists independently assign 97% confidence, and the family pedigree (maternal uncle dead of kidney failure at 42, mother with mild hand pain, grandmother with heart disease) is a textbook X-linked Fabry pattern; the metabolic specialist report failed to return but does not change the picture, as two specialists already converge on the same diagnosis with no disagreement. Immediate next step today: send a dried-blood-spot \u03b1-galactosidase A enzyme activity assay (\u20b93,000\u20138,000, result in 5\u201310 days via NIRMAN Mumbai, Medgenome, or AIIMS) \u2014 in a hemizygous male, activity below 1% is essentially diagnostic and unlocks enzyme replacement therapy (agalsidase) or oral migalastat. While awaiting the result, start an ACE inhibitor or ARB for proteinuria, begin carbamazepine or gabapentin for the neuropathic pain (NSAIDs/opioids have failed because this is Gb3-mediated, not nociceptive), and arrange GLA sequencing for the patient and his mother. This is urgent: untreated, his maternal uncle's trajectory of end-stage renal disease at 42 is the natural history he is on, and ERT initiated now can slow renal and cardiac progression."
+      },
+      "status": "draft",
+      "confirmedAt": null,
+      "confirmedDiagnosisName": null,
+      "confirmedOmimId": null,
+      "confirmedOrphaCode": null,
+      "confirmedGene": null,
+      "confirmedVariant": null,
+      "overrideJustification": null,
+      "symptomOnsetDate": "2015-03-28",
+      "doctorState": "Maharashtra",
+      "id": "5e49851c-e1fa-4738-869a-92daff3641c9",
+      "createdAt": "2026-05-05T07:35:47.656Z",
+      "updatedAt": "2026-05-05T07:50:30.573Z"
+    }
+  ],
+  "consultations": [
+    {
+      "id": "consult-1",
+      "caseId": "case-4a1f",
+      "requestingDoctorId": "u1",
+      "specialistId": "u2",
+      "status": "completed",
+      "requestNote": "Patient is 39, starting ERT. Any guidance on imiglucerase dosing and GBA sequencing for family planning?",
+      "specialistNotes": "Recommend starting imiglucerase at 60 U/kg IV every 2 weeks. GBA sequencing appropriate for family planning \u2014 recommend testing siblings and children of patient. Standard N370S and L444P panel first at CDFD Hyderabad.\n\nRegarding the Neurogenetic agent's concern about NPC-C: the crumpled tissue-paper BM morphology and the dramatic response pattern here effectively rule it out clinically. I would not order filipin staining. The N370S variant is overwhelmingly the most common Gujarati GBA pathogenic variant.",
+      "createdAt": "2026-03-19T10:00:00Z",
+      "updatedAt": "2026-03-21T15:30:00Z",
+      "purpose": "consult",
+      "pipelineStatus": null,
+      "pipelineHistory": [],
+      "labConfirmedAt": null,
+      "labResult": null,
+      "nprdFiledAt": null,
+      "nprdReferenceNumber": null,
+      "mohfwRespondedAt": null,
+      "mohfwDecision": null,
+      "mohfwAmount": null
+    }
+  ],
+  "consents": [
+    {
+      "id": "consent-1",
+      "patientUserId": "u3",
+      "caseId": "case-4a1f",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": true,
+      "updatedAt": "2026-03-22T11:00:00Z"
+    },
+    {
+      "id": "9699828d-f33e-4062-a339-cdab971b3060",
+      "patientUserId": "c-u101",
+      "caseId": "case-1416bb96",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": true,
+      "updatedAt": "2026-03-21T07:25:16.376740Z"
+    },
+    {
+      "id": "5cd3ee73-2bd5-4993-a723-f47d4e330807",
+      "patientUserId": "c-u102",
+      "caseId": "case-d4f28f2c",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": false,
+      "updatedAt": "2026-02-22T07:25:16.376740Z"
+    },
+    {
+      "id": "62bfa1d5-f0d6-41e7-8d07-433530503571",
+      "patientUserId": "c-u103",
+      "caseId": "case-831d427d",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": true,
+      "updatedAt": "2026-02-04T07:25:16.376740Z"
+    },
+    {
+      "id": "83c26bab-5f87-4d10-94a9-ebd8bbe437d4",
+      "patientUserId": "c-u104",
+      "caseId": "case-6879d13f",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": false,
+      "updatedAt": "2026-01-05T07:25:16.376740Z"
+    },
+    {
+      "id": "d6fc6b0c-81f5-4527-b6c8-20ef8f62598d",
+      "patientUserId": "c-u105",
+      "caseId": "case-bc6cb608",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": true,
+      "updatedAt": "2025-12-06T07:25:16.376740Z"
+    },
+    {
+      "id": "1334d3ac-4443-4953-ba6c-7b6a8777e4eb",
+      "patientUserId": "c-u106",
+      "caseId": "case-e4434c13",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": false,
+      "updatedAt": "2026-04-05T07:25:16.376740Z"
+    },
+    {
+      "id": "5919bf43-57a1-4bd1-8d7d-b2fd3c3aba22",
+      "patientUserId": "c-u107",
+      "caseId": "case-ae64a171",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": true,
+      "updatedAt": "2026-03-06T07:25:16.376740Z"
+    },
+    {
+      "id": "ae42befc-0a17-4568-b30f-7d5b31f9e211",
+      "patientUserId": "c-u108",
+      "caseId": "case-67c490c6",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": false,
+      "updatedAt": "2026-01-25T07:25:16.376740Z"
+    },
+    {
+      "id": "a7f1ba67-ffd5-4565-a0e9-cf7915f3deb3",
+      "patientUserId": "c-u109",
+      "caseId": "case-fa0d94e5",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": true,
+      "updatedAt": "2025-12-26T07:25:16.376740Z"
+    },
+    {
+      "id": "71287f45-156c-4440-8113-fb320d64a8a1",
+      "patientUserId": "c-u110",
+      "caseId": "case-e6eee785",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": false,
+      "updatedAt": "2026-04-15T07:25:16.376740Z"
+    },
+    {
+      "id": "ae8cda0f-8139-43d6-8e78-ba03f779e909",
+      "patientUserId": "c-u111",
+      "caseId": "case-80bd312d",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": true,
+      "updatedAt": "2026-02-09T07:25:16.376740Z"
+    },
+    {
+      "id": "7db3bff7-fa73-46ad-b3f0-0de05f339d1f",
+      "patientUserId": "c-u112",
+      "caseId": "case-543c2036",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": false,
+      "updatedAt": "2026-01-15T07:25:16.376740Z"
+    },
+    {
+      "id": "086d6470-a0c9-4ac2-9d39-c7e8230dd80c",
+      "patientUserId": "c-u113",
+      "caseId": "case-e582618f",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": true,
+      "updatedAt": "2025-11-11T07:25:16.376740Z"
+    },
+    {
+      "id": "f5e47a0b-688d-4473-bd66-98d99fac38d1",
+      "patientUserId": "c-u114",
+      "caseId": "case-48de5dd2",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": false,
+      "updatedAt": "2025-10-17T07:25:16.376740Z"
+    },
+    {
+      "id": "a5549889-c23a-43cb-8e29-fe71aefd4e34",
+      "patientUserId": "c-u115",
+      "caseId": "case-8f0b417f",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": true,
+      "updatedAt": "2026-03-26T07:25:16.376740Z"
+    },
+    {
+      "id": "1584661b-0534-4396-a85e-248eacef9e2a",
+      "patientUserId": "c-u116",
+      "caseId": "case-39aaab2b",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": false,
+      "updatedAt": "2026-02-14T07:25:16.376740Z"
+    },
+    {
+      "id": "9beda436-80df-4127-be01-83dd11636f04",
+      "patientUserId": "c-u117",
+      "caseId": "case-03f7d030",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": true,
+      "updatedAt": "2025-12-16T07:25:16.376740Z"
+    },
+    {
+      "id": "d8769206-88b7-4566-8bdf-efdf9f9da4b7",
+      "patientUserId": "c-u118",
+      "caseId": "case-c3fa7b52",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": false,
+      "updatedAt": "2025-11-21T07:25:16.376740Z"
+    },
+    {
+      "id": "d1bcde48-d2ae-499a-a748-5c75f217545a",
+      "patientUserId": "c-u119",
+      "caseId": "case-108bfc50",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": true,
+      "updatedAt": "2026-03-11T07:25:16.376740Z"
+    },
+    {
+      "id": "52971368-65dc-4078-850f-94647f020181",
+      "patientUserId": "c-u120",
+      "caseId": "case-76de10e6",
+      "epidemiology": true,
+      "researchCohort": true,
+      "researchContact": false,
+      "updatedAt": "2026-01-20T07:25:16.376740Z"
+    }
+  ],
+  "researchRequests": [
+    {
+      "id": "rr-1",
+      "researcherId": "u5",
+      "queryDiseaseName": "Gaucher disease type 1",
+      "queryOmimId": "230800",
+      "queryGene": "GBA",
+      "queryState": null,
+      "matchedCount": 1,
+      "purpose": "Natural history study of GBA variant distribution in Indian Gaucher patients",
+      "institution": "CSIR-CCMB Hyderabad",
+      "irbReference": "CCMB/IEC/2026/04",
+      "dataFieldsRequested": "Age range, gender, HPO terms, confirmed variant, state",
+      "status": "approved",
+      "adminNotes": "IRB verified. Standard de-identification protocol applies.",
+      "createdAt": "2026-04-10T09:00:00Z",
+      "updatedAt": "2026-04-10T09:00:00Z"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "tl-1",
+      "caseId": "case-4a1f",
+      "eventType": "case_created",
+      "actorUserId": "u1",
+      "metadata": {},
+      "createdAt": "2026-03-04T11:22:00Z"
+    },
+    {
+      "id": "tl-2",
+      "caseId": "case-4a1f",
+      "eventType": "diagnosis_confirmed",
+      "actorUserId": "u1",
+      "metadata": {
+        "diagnosis": "Gaucher disease type 1"
+      },
+      "createdAt": "2026-03-18T09:14:00Z"
+    },
+    {
+      "id": "tl-3",
+      "caseId": "case-4a1f",
+      "eventType": "patient_invited",
+      "actorUserId": "u1",
+      "metadata": {},
+      "createdAt": "2026-03-18T09:20:00Z"
+    },
+    {
+      "id": "tl-4",
+      "caseId": "case-4a1f",
+      "eventType": "consult_requested",
+      "actorUserId": "u1",
+      "metadata": {
+        "specialistId": "u2"
+      },
+      "createdAt": "2026-03-19T10:00:00Z"
+    },
+    {
+      "id": "tl-5",
+      "caseId": "case-4a1f",
+      "eventType": "consult_completed",
+      "actorUserId": "u2",
+      "metadata": {},
+      "createdAt": "2026-03-21T15:30:00Z"
+    },
+    {
+      "id": "tl-6",
+      "caseId": "case-4a1f",
+      "eventType": "consent_updated",
+      "actorUserId": "u3",
+      "metadata": {},
+      "createdAt": "2026-03-22T11:00:00Z"
+    },
+    {
+      "id": "tl-7",
+      "caseId": "case-7c3e",
+      "eventType": "case_created",
+      "actorUserId": "u1",
+      "metadata": {},
+      "createdAt": "2026-03-28T10:05:00Z"
+    },
+    {
+      "id": "tl-8",
+      "caseId": "case-7c3e",
+      "eventType": "diagnosis_confirmed",
+      "actorUserId": "u1",
+      "metadata": {
+        "diagnosis": "Spinal muscular atrophy type II"
+      },
+      "createdAt": "2026-04-02T14:30:00Z"
+    },
+    {
+      "caseId": "case-4a1f",
+      "eventType": "consult_requested",
+      "actorUserId": "u1",
+      "metadata": {
+        "specialistId": "u2"
+      },
+      "id": "08b0575f-f2d3-412c-8a8d-1850348bf85c",
+      "createdAt": "2026-05-05T01:52:54.985Z"
+    },
+    {
+      "caseId": "5e49851c-e1fa-4738-869a-92daff3641c9",
+      "eventType": "case_created",
+      "actorUserId": "u1",
+      "metadata": {},
+      "id": "2134dd69-c811-45a3-9044-91a8bbe8321d",
+      "createdAt": "2026-05-05T07:35:47.656Z"
+    },
+    {
+      "caseId": "5e49851c-e1fa-4738-869a-92daff3641c9",
+      "eventType": "analysis_started",
+      "actorUserId": "u1",
+      "metadata": {},
+      "id": "c2c98d15-65e6-4f15-89c6-9eee8ef6541d",
+      "createdAt": "2026-05-05T07:36:47.282Z"
+    },
+    {
+      "caseId": "5e49851c-e1fa-4738-869a-92daff3641c9",
+      "eventType": "analysis_complete",
+      "actorUserId": "u1",
+      "metadata": {},
+      "id": "5dc75314-68a3-4183-81bc-85bbf60b1696",
+      "createdAt": "2026-05-05T07:50:30.573Z"
+    }
+  ]
+}
