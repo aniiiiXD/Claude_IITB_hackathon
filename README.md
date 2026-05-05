@@ -307,6 +307,26 @@ Each of these is a link Nidaan is built to hold.
 
 ---
 
+## Risks, harms, and ethical alignment
+
+We've written an honest accounting of what could go wrong, what we've
+designed against, and what we have not yet solved → **[docs/risks-and-ethics.md](docs/risks-and-ethics.md)**.
+
+The single design rule, stated plainly:
+
+> **Every irreversible action is taken by a human, not the AI.**
+
+The AI drafts. The doctor confirms. The specialist signs. The patient
+sees the doctor's confirmation, never raw model output. The NPRD
+application is signed by the CoE, not autosubmitted. The ten failure
+modes we explicitly designed against — false confidence, false negatives,
+hallucinated citations, patient panic, NPRD fraud risk, cohort
+re-identification, dataset bias toward Western patients, privacy breach,
+clinician deskilling, and liability ambiguity — are documented with
+their mitigations and the gaps we have not yet closed.
+
+---
+
 ## What Nidaan is not
 
 - **Not just a diagnostic tool.** Diagnosis without lab routing, funding, drug access, and follow-up is a half-built bridge. Nidaan ships all five.
