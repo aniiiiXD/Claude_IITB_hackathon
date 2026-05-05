@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'motion/react';
-import { ArrowRight, Stethoscope, MessageSquarePlus, Search, BarChart3, X, Check, Network, Building2, FlaskConical, BadgeIndianRupee, AlertTriangle } from 'lucide-react';
+import { ArrowRight, Stethoscope, MessageSquarePlus, Search, BarChart3, X, Check, Network, Building2, FlaskConical, BadgeIndianRupee, AlertTriangle, Shield } from 'lucide-react';
 import { RoleSwitcher } from '@/components/layout/role-switcher';
 import { HowItWorksSection } from '@/components/landing/topology';
 
@@ -23,6 +23,7 @@ export function WarmLanding() {
       <StatsStrip />
       <FiveLinkChain />
       <SolutionSection />
+      <GuardrailsSection />
       <HowWeFitSection />
       <HowItWorksSection />
       <RolesGrid />
@@ -51,6 +52,10 @@ function Header() {
           <Link href="#how-it-works" className="text-sm transition-opacity hover:opacity-70"
             style={{ color: INK_900 }}>
             How it works
+          </Link>
+          <Link href="#guardrails" className="text-sm transition-opacity hover:opacity-70"
+            style={{ color: INK_900 }}>
+            Guardrails
           </Link>
           <Link href="/government/dashboard" className="text-sm transition-opacity hover:opacity-70"
             style={{ color: INK_900 }}>
@@ -615,6 +620,146 @@ function SolutionSection() {
         },
       ]}
     />
+  );
+}
+
+
+/* ─── Guardrails — what if it goes wrong ─────────────────── */
+
+type Guardrail = { title: string; body: string };
+
+function GuardrailsSection() {
+  const guardrails: Guardrail[] = [
+    {
+      title: 'Every irreversible action is human.',
+      body: 'AI drafts. Doctor confirms. Specialist signs. The patient sees the doctor\'s confirmation — never raw model output. The AI is the resident who reads the chart and presents the case. The attending is still a human.',
+    },
+    {
+      title: 'No diagnosis. Only a differential with evidence.',
+      body: 'Every disease ships with the HPO terms, MedGen IDs, and PubMed citations that produced it. If a tool wasn\'t called, the claim doesn\'t ship. Confidence scores live next to their citations, not on their own.',
+    },
+    {
+      title: 'Disagreement is the headline, not buried.',
+      body: 'Where the metabolic, neurogenetic, and immunologic agents disagreed — and the single test that resolves the disagreement — is the first thing the doctor sees. Hidden disagreement is the easiest way to launder false confidence.',
+    },
+    {
+      title: 'A test sits between the AI and any treatment.',
+      body: 'The recommended next step is always a confirmatory assay or gene panel — never a drug order. The ₹2,500 β-glucocerebrosidase enzyme assay sits between the synthesizer\'s guess and any ERT.',
+    },
+    {
+      title: 'The patient never sees raw model output.',
+      body: 'Patients see status updates while the case moves and the doctor\'s confirmed diagnosis when it\'s ready. The synthesizer\'s draft is never exposed. The "Confirm Diagnosis" action gates the handoff, with an audit log.',
+    },
+    {
+      title: 'Cohort floor protects ultra-rare patients.',
+      body: 'Researcher queries returning fewer than five patients return "insufficient cohort" — not a count. Re-identifying a single Mizoram Gaucher case from a return value of "1" is the failure we refuse to ship. Geography is bucketed at state level by default.',
+    },
+  ];
+
+  return (
+    <section
+      id="guardrails"
+      className="px-[5%] py-20"
+      style={{ background: CREAM_LIGHT, borderTop: `1px solid ${INK_900}10` }}>
+      <div className="mx-auto max-w-6xl">
+        <motion.div
+          initial={{ opacity: 0, x: -8 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="mb-3 flex items-center gap-2">
+          <Shield className="size-4" style={{ color: RUST }} strokeWidth={1.5} />
+          <p className="text-xs font-medium uppercase tracking-[0.2em]" style={{ color: RUST }}>
+            What if it goes wrong
+          </p>
+        </motion.div>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 8 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="text-3xl md:text-5xl"
+          style={{ color: INK_900, fontFamily: 'Instrument Serif, serif', fontWeight: 400 }}>
+          Six guardrails between<br />the AI and a wrong decision.
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0, y: 8 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="mt-6 max-w-3xl text-base leading-relaxed"
+          style={{ color: INK_500 }}>
+          A treatable rare-disease patient has fewer chances than the average patient — being
+          wrong here costs more. The single design rule:{' '}
+          <span style={{ color: INK_900, fontStyle: 'italic' }}>
+            every irreversible action is taken by a human, not the AI.
+          </span>
+        </motion.p>
+
+        <div className="mt-12 grid gap-5 md:grid-cols-2">
+          {guardrails.map((g, i) => (
+            <motion.div
+              key={g.title}
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.05 * i }}
+              className="rounded-md p-6"
+              style={{
+                background: CREAM,
+                border: `1px solid ${RUST}25`,
+                boxShadow: `2px 2px 0 ${RUST}15`,
+              }}>
+              <div className="mb-3 flex items-center gap-2">
+                <p className="text-[10px] font-bold uppercase tracking-[0.2em]" style={{ color: RUST }}>
+                  Guardrail · 0{i + 1}
+                </p>
+              </div>
+              <h3
+                className="mb-2 text-xl leading-snug"
+                style={{ color: INK_900, fontFamily: 'Instrument Serif, serif', fontWeight: 400 }}>
+                {g.title}
+              </h3>
+              <p className="text-sm leading-relaxed" style={{ color: INK_500 }}>
+                {g.body}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* What we haven't solved — radical honesty box */}
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-10 rounded-md p-6"
+          style={{
+            background: CREAM,
+            border: `1.5px dashed ${INK_800}50`,
+          }}>
+          <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.2em]" style={{ color: INK_800 }}>
+            What we haven&apos;t solved yet
+          </p>
+          <p className="text-sm leading-relaxed" style={{ color: INK_900 }}>
+            Differential privacy for cohort queries (we have a floor; we need an ε-budget).
+            Voice and vernacular input for patients without text literacy. Consent revocation
+            that retroactively scrubs aggregates. Dataset bias correction by partnering with
+            Indian rare-disease registries. We&apos;d rather be wrong publicly than silently —
+            the full audit, including ten failure modes with mitigations, lives in{' '}
+            <Link
+              href="https://github.com/aniiiiXD/Claude_IITB_hackathon/blob/main/docs/risks-and-ethics.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline transition-opacity hover:opacity-70"
+              style={{ color: RUST }}>
+              docs/risks-and-ethics.md
+            </Link>
+            .
+          </p>
+        </motion.div>
+      </div>
+    </section>
   );
 }
 
