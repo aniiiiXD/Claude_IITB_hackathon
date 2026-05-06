@@ -56,13 +56,15 @@ export default function WarmupPage() {
         const detail = `HTTP ${res.status}`;
         setStatus('error');
         setErrorMsg(detail);
-        setHistory((h) => [{ at: new Date().toLocaleTimeString(), ms, status: 'fail', detail }, ...h].slice(0, 6));
+        const entry: PingLog = { at: new Date().toLocaleTimeString(), ms, status: 'fail', detail };
+        setHistory((h) => [entry, ...h].slice(0, 6));
         return;
       }
 
       setResponse(text);
       setStatus('ready');
-      setHistory((h) => [{ at: new Date().toLocaleTimeString(), ms, status: 'ok', detail: text.slice(0, 80) }, ...h].slice(0, 6));
+      const okEntry: PingLog = { at: new Date().toLocaleTimeString(), ms, status: 'ok', detail: text.slice(0, 80) };
+      setHistory((h) => [okEntry, ...h].slice(0, 6));
     } catch (err) {
       const ms = performance.now() - start;
       if (tickRef.current) clearInterval(tickRef.current);
@@ -70,7 +72,8 @@ export default function WarmupPage() {
       const detail = err instanceof Error ? err.message : String(err);
       setStatus('error');
       setErrorMsg(detail);
-      setHistory((h) => [{ at: new Date().toLocaleTimeString(), ms, status: 'fail', detail }, ...h].slice(0, 6));
+      const entry: PingLog = { at: new Date().toLocaleTimeString(), ms, status: 'fail', detail };
+      setHistory((h) => [entry, ...h].slice(0, 6));
     }
   }, []);
 
